@@ -40,7 +40,7 @@ As you complete each tool setup, **come back and update the "My Toolkit" section
 
 ## 🛠️ **My Toolkit**
 *Update these links as you complete each tool setup:*
-- **GitHub:** [This Repository] ⏳
+- **GitHub:** https://github.com/p3ytonk/DESN368-code-design-workspace-pk ⏳
 - **Workspace (Forked Repo):** [Add your forked repo link here] ⏳
 - **Figma:** [Add your Figma username here] ⏳
 - **CodePen:** [Add your CodePen profile URL here] ⏳
