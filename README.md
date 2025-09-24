@@ -43,7 +43,7 @@ As you complete each tool setup, **come back and update the "My Toolkit" section
 - **GitHub:** https://github.com/p3ytonk/DESN368-code-design-workspace-pk ⏳
 - **Workspace (Forked Repo):** [Add your forked repo link here] ⏳
 - **Figma:** [Add your Figma username here] ⏳
-- **CodePen:** [Add your CodePen profile URL here] ⏳
+- **CodePen:** https://codepen.io/your-work ⏳
 - **LiveCode:** [Add your LiveCode profile here] ⏳
 - **GitHub Student Pack:** [Confirm approval status here] ⏳  
 
