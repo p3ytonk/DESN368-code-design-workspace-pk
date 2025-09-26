@@ -43,7 +43,7 @@ As you complete each tool setup, **come back and update the "My Toolkit" section
 - **GitHub Profile:** https://github.com/p3ytonk ⏳
 - **Workspace (Forked Repo):** https://github.com/p3ytonk/DESN368-code-design-workspace-pk ⏳
 - **Figma:** https://www.figma.com/@peytonknox ⏳
-- **CodePen:** https://codepen.io/your-work ⏳
+- **CodePen:** https://codepen.io/pknox ⏳
 - **GitHub Student Pack:** [Confirm approval status here] ⏳  
 
 ### **How to Update Your Toolkit:**
