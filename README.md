@@ -31,7 +31,7 @@ As you complete each tool setup, **come back and update the "My Toolkit" section
 ---
 
 ## 👤 **Student Information**
-**Student:** Peyton Knox 
+**Student:** Peyton Knox   
 **Email:** pknox@ewu.edu  
 **Course:** DESN368 CODE + DESIGN 1  
 **Semester:** Fall 2025  
