@@ -6,7 +6,7 @@
 - [x] 🎨 Figma Education Account & Team Access  
 - [x] 💻 CodePen Account & Profile  
 - [ ] 🎁 GitHub Student Developer Pack  
-- [ ] 🔄 Complete Setup Verification  
+- [x] 🔄 Complete Setup Verification  
 
 ---
 
@@ -80,7 +80,6 @@ Consider adding a profile photo (helps me learn names!)
    - GitHub repo URL  
    - Figma username  
    - CodePen URL  
-   - LiveCode link  
 2. Submit your repo link in Canvas.  
 3. 🎉 Done — your professional workspace is ready.  
 
