@@ -3,20 +3,20 @@
 ## Background & Skills
 
 **1. Major:**  
-[Your answer here]
+[Visual Communication Design]
 
 **2. Design courses completed:**  
-[ ] DESN 100  
-[ ] DESN 200  
-[ ] DESN 216  
-[ ] DESN 243  
-[ ] DESN 263  
-[ ] DESN 338  
+[x] DESN 100  
+[x] DESN 200  
+[x] DESN 216  
+[x] DESN 243  
+[x] DESN 263  
+[x] DESN 338  
 [ ] None  
 [ ] Other: _______________
 
 **3. Web experience:**  
-[ ] Never coded  
+[x] Never coded  
 [ ] Viewed source  
 [ ] Modified HTML/CSS  
 [ ] Built websites  
@@ -25,7 +25,7 @@
 **4. AI tool experience:**  
 [ ] Never used  
 [ ] ChatGPT occasionally  
-[ ] Regular AI user  
+[x] Regular AI user  
 [ ] Coding with AI  
 [ ] Not sure what this means
 
@@ -34,7 +34,7 @@
 **5. When you see a website, you primarily notice:**  
 [ ] Visual design  
 [ ] How it functions  
-[ ] Both equally  
+[x] Both equally  
 [ ] Other: _______________
 
 **6. Rate your comfort level (1-5 scale, 5 = very comfortable):**  
