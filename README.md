@@ -1,5 +1,6 @@
 # 🎉 Welcome to DESN368 CODE + DESIGN ONE!
 Peyton Knox 09/24/2025
+https://desn368-portfolio-pk.netlify.app
 
 **Welcome to DESN368 Web Design!**  
 You're viewing the instructor's course repository(repo). This serves as your reference and source for all course materials.  
