@@ -86,7 +86,6 @@ Here’s what’s in your portfolio repository:
 
 ---
 
-## **Project 1**
 ## Project 1: Tribute Page
 
 **Subject:** Cipe Pineles
