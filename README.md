@@ -100,8 +100,7 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 
 ## Resources
 
-- [Link to course materials]
-- [Link to helpful websites or tutorials you found]
+- [CSS Introduction](https://www.theodinproject.com/lessons/foundations-intro-to-css#properties-to-get-started-with)
 
 ## Tools Used
 
