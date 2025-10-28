@@ -21,14 +21,18 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 - History of the web
 
 **Key Takeaways:**
-[Write 1-2 sentences about what you learned or found most interesting]
+- Discovered why our favorite websites are our favorite and what makes them enjoyable to visit
+- The web has changed immensely since it began not only in functionality, but in its design as well
+- html basics
 
 **Files:**
-- [Link to specific files or note what's in the week-1 folder]
+- [newspaper.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/newspaper.html)
+- [favoriteband.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/favoriteband.html)
+- [lostpet.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/lostpet.html)
 
 ---
 
-## Week 2 - [Topic Title]
+## Week 2 - HTML Architecture
 
 **Topics Covered:**
 - [List main topics]
