@@ -26,9 +26,9 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 - html basics
 
 **Files:**
-- [newspaper.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/newspaper.html)
-- [favoriteband.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/favoriteband.html)
-- [lostpet.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/lostpet.html)
+- [Newspaper](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/newspaper.html)
+- [Favorite Band](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/favoriteband.html)
+- [Lost Pet](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-1/lostpet.html)
 
 ---
 
@@ -50,9 +50,9 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 - Figma 101 Courses
 
 **Files:**
-- [lorem-ipsum.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/lorem-ipsum.html)
-- [craiglist-ad.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/craiglist-ad.html)
-- [wiki-article.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/wiki-article.html)
+- [Lorem Ipsum](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/lorem-ipsum.html)
+- [Craigslist Ad](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/craiglist-ad.html)
+- [Wiki Article](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/wiki-article.html)
 
 ---
 
@@ -75,7 +75,7 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 - Figma 101 Courses
 
 **Files:**
-- [recipe-site.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/recipe-site/recipe.html)
+- [Recipe In Style](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/recipe-site/recipe.html)
 
 ---
 
