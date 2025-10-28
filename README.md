@@ -35,32 +35,47 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 ## Week 2 - HTML Architecture
 
 **Topics Covered:**
-- [List main topics]
+- Visual Hierarchy
+- HTML Document Structure
+- Professional Workflow
 
 **Key Takeaways:**
-[Write 1-2 sentences about what you learned or found most interesting]
+- Learned how to organize file documents with hierarchy
+- Learned how to use Github and Codepen
+- Learned how to write semantic HTML
 
 **Projects/Exercises:**
-- [Describe what you built or practiced]
+- Codex.io Exercises & Practice
+- VSCode Tutorial
+- Figma 101 Courses
 
 **Files:**
-- [Link to specific files or note what's in the week-2 folder]
+- [lorem-ipsum.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/lorem-ipsum.html)
+- [craiglist-ad.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/craiglist-ad.html)
+- [wiki-article.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/wiki-article.html)
 
 ---
 
-## Week 3 - [Topic Title]
+## Week 3 - Introduction to CSS
 
 **Topics Covered:**
-- [List main topics]
+- CSS Introduction
+- CSS Application
+- Semantics
 
 **Key Takeaways:**
-[Write 1-2 sentences about what you learned or found most interesting]
+- Learned how to apply CSS to our recipe
+- Learned how to use Copilot in Github
+- Learned about Cascade Foundations
 
 **Projects/Exercises:**
-- [Describe what you built or practiced]
+- Code Academy CSS Exercises & Practice
+- Design a Tribute Site
+- Recipe in style
+- Figma 101 Courses
 
 **Files:**
-- [Link to specific files or note what's in the week-3 folder]
+- [recipe-site.html](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-2/recipe-site/recipe.html)
 
 ---
 
@@ -72,7 +87,9 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 - Markdown formatting
 
 **Key Takeaways:**
-[Write 1-2 sentences about what you learned]
+- Learned how important divs are when adding CSS to code
+- Understanding how important repo organization is
+- Discovered how different designing is vs applying your design through CSS
 
 **Tasks Completed:**
 - ✓ Organized repo with week folders
@@ -85,14 +102,13 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 
 - [Link to course materials]
 - [Link to helpful websites or tutorials you found]
-- [Any other resources you want to remember]
 
 ## Tools Used
 
 - VS Code
 - Firefox Developer Edition
 - GitHub
-- [Other tools]
+- Figma
 
 ---
 
