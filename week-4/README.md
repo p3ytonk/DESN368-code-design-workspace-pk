@@ -14,7 +14,7 @@ The hardest part of translating my design to code was figuring out how to have t
 
 <strong>**What CSS property/concept do you feel you understand better now?**</strong>
 <br>
-After doing this project I feel as though I understand <div> and class way better. I had to create so many to seperate all of my different content and it really helped me stay organized on where I was at when starting the CSS part of the project. 
+After doing this project I feel as though I understand div and class way better. I had to create so many to seperate all of my different content and it really helped me stay organized on where I was at when starting the CSS part of the project. 
 
 <strong>**How closely does your code match your design? What would you do differently?**</strong>
 <br>
