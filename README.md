@@ -1,4 +1,5 @@
 # DESN368 - Web Design 1 Portfolio
+PEYTON KNOX
 
 ## About This Repository
 
