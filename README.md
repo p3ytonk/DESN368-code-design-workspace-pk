@@ -82,7 +82,18 @@ Here’s what’s in your portfolio repository:
 - **`/setup/`** - 📋 Tool setup guides and verification checklist  
 - **`/week-0/`** - 📝 Week 0 assignments and projects  
 - **`/projects/`** - 🎨 Major course projects and portfolio pieces  
-- **`README.md`** - 📖 This file - your portfolio home page  
+- **`README.md`** - 📖 This file - your portfolio home page
+
+---
+
+## **Project 1**
+## Project 1: Tribute Page
+
+**Subject:** Cipe Pineles
+
+**Links:**
+- [Figma Design](https://www.figma.com/design/2Bimc8PLMKFCOk5CbhQI9Z/tribute-knoxpeyton-f25?node-id=0-1&t=pZNjEjeyXEqg51lT-1)
+- [Live Page](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/week-4/tribute.html)
 
 ---
 
