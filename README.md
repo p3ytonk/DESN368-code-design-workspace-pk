@@ -101,6 +101,7 @@ This repository documents my learning journey in Web Design 1 (DESN368) during F
 ## Resources
 
 - [CSS Introduction](https://www.theodinproject.com/lessons/foundations-intro-to-css#properties-to-get-started-with)
+- [DESN368 Netlify](https://desn368-f25.netlify.app/)
 
 ## Tools Used
 
