@@ -1,0 +1,22 @@
+.author {
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
+}
+
+.title {
+  font-family: 'Metal Mania', cursive;
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.chapter {
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  line-height: 22px;
+  font-size: 16px;
+}
