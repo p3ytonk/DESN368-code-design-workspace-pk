@@ -223,21 +223,6 @@ body {
   }
 }
 
-body {
-  margin: 0;
-  color: var(--text);
-
-  background:
-    url("sims-web-pattern.png") repeat,
-    linear-gradient(180deg, var(--green-dark) 0%, var(--green) 100%);
-  
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-size: auto, cover;
-  background-position: top left, center;
-  
-  font-family: 'IBM Plex Mono', monospace;
-}
 .site-footer a {
   text-decoration: none;
 }
