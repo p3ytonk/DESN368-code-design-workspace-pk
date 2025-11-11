@@ -241,3 +241,20 @@ body {
 .site-footer a {
   text-decoration: none;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("sims-web-pattern.png") repeat center;
+  background-size: auto;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, var(--green-dark) 0%, var(--green) 100%);
+}
