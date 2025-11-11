@@ -193,10 +193,11 @@ body {
 .back-button {
   display: inline-block;
   padding: 10px 24px;
-  border: none;
-  border-radius: 30px;
+  border: none !important;
+  outline: none !important;
   background: #fff;
   color: #000;
+  border-radius: 30px;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 700;
