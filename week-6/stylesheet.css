@@ -230,7 +230,7 @@ body {
 body {
   margin: 0;
   color: var(--text);
-  background: url("week-6/images/field-guide-background.png") center center / cover no-repeat fixed;
+  background: url(images/field-guide-background.png") center center / cover no-repeat fixed;
   font-family: 'IBM Plex Mono', monospace;
 }
 
