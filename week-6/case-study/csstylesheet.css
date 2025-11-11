@@ -74,7 +74,7 @@ header h1 {
   content: "";
   display: block;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   height: 4px;
   background: var(--black);
   margin-top: 10px;
@@ -179,7 +179,6 @@ footer p {
 .back-button {
   display: inline-block;
   padding: 10px 24px;
-  border: 2px solid #000;
   border-radius: 30px;
   background: #fff; 
   color: #000;
