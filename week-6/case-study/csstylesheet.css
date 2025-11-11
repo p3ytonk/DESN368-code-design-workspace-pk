@@ -182,3 +182,23 @@ body {
   background: url("images/field-guide-background.png") center center / cover no-repeat fixed;
   font-family: 'IBM Plex Mono', monospace;
 }
+
+.back-button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background: #fff; 
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
