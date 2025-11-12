@@ -245,10 +245,14 @@ a.button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 0;
   background: #0b0b0b;
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 36px 40px 48px;
+  margin: 0 auto 48px;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
 }
 
 .sims-section img {
