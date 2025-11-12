@@ -242,22 +242,22 @@ a.button:active {
 }
 
 .sims-section {
-  background: #0b0b0b;
-  border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 0 auto 48px;
-  width: 100%;
-  max-width: 960px;
-  padding: 48px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 320px; /* ensures it has presence */
+  background: #0b0b0b;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 36px 40px 48px;
+  margin: 0 auto 48px;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
 }
 
 .sims-section img {
-  display: block;
   max-width: 500px;
   width: 80%;
   height: auto;
+  display: block;
 }
