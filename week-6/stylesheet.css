@@ -241,9 +241,20 @@ a.button:active {
   text-decoration: none;
 }
 
+.sims-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background: #0b0b0b;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .sims-section img {
-  max-width: 500px; /* scale the image size */
+  max-width: 500px;
   width: 80%;
   height: auto;
+  display: block;
 }
 
