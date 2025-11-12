@@ -203,7 +203,6 @@ body {
     border-bottom: 8px solid var(--green);
   }
 
-
   .page {
     margin-left: 0;
     align-items: center;
@@ -253,7 +252,7 @@ a.button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 320px;
+  min-height: 320px; /* ensures it has presence */
 }
 
 .sims-section img {
@@ -262,51 +261,3 @@ a.button:active {
   width: 80%;
   height: auto;
 }
-
-/* Mobile layout improvements */
-.sims-section {
-  flex-direction: column;
-  padding: 24px 16px;
-  min-height: auto;
-  margin: 16px auto 32px;
-  border-radius: 16px;
-}
-
-.sims-section img {
-  width: 100%;
-  max-width: 320px;
-}
-
-.card {
-  padding: 24px 16px;
-  margin-bottom: 32px;
-  border-radius: 16px;
-}
-
-.sidebar {
-  position: static;
-  width: 100%;
-  border-bottom: none;
-  padding: 16px;
-  text-align: center;
-}
-
-.sidebar h1 {
-  font-size: 24px;
-}
-
-.sidebar ul {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin: 12px 0;
-}
-
-.sidebar a {
-  font-size: 18px;
-}
-
-
-
-
