@@ -241,15 +241,6 @@ a.button:active {
   text-decoration: none;
 }
 
-.sims-section {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px; /* adjust to make it taller or shorter */
-  width: 100%;
-}
-
 .sims-section img {
   max-width: 500px; /* scale the image size */
   width: 80%;
