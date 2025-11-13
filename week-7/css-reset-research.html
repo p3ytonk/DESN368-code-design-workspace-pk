@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Reset & Normalize Notes</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<main class="page">
+
+  <h1 class="title accent">Research & Make CSS Normalize and CSS Reset</h1>
+
+  <section class="section">
+    <h2 class="heading">Why reset at all? (What problem does it solve?)</h2>
+    <p>
+      Resets basically wipe out all the weird default styles every browser adds on its own.
+      Back in the day, browsers all had super different paddings, margins, line-heights, and
+      random styling on things like lists or headings. It made designs look different in every
+      browser unless you manually fixed all of that. A reset forces everything to start from
+      the same baseline.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">Why Josh’s version over Eric’s? (2–3 differences)</h2>
+    <ul>
+      <li>Josh’s reset is more “modern-browser-aware,” so he skips a lot of the blanket
+      zero-everything approach from 2007. He focuses on actual pain points we still deal
+      with now.</li>
+      <li>Josh keeps useful defaults like headings staying bold, instead of wiping everything
+      like Eric’s reset did.</li>
+      <li>Josh adds modern fixes (like text-wrap: balance; and smoothing for media and
+      buttons) that didn’t exist back then, so it’s more tuned to real 2020s problems instead
+      of old issues.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">How do you actually use these? (Link tag? Import? Inline?)</h2>
+    <p>You just put the CSS reset at the very top of your stylesheet.</p>
+    <p>Options:</p>
+    <ul>
+      <li>&lt;link&gt; to an external reset.css file</li>
+      <li>Or copy/paste it at the top of your main CSS file</li>
+      <li>Or @import it but that’s kind of discouraged now because it slows loading.</li>
+    </ul>
+    <p>Most people just paste it directly into their CSS as the first thing.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">What’s a CSS boilerplate? (vs. a reset)</h2>
+    <p>
+      A reset wipes everything clean.<br>
+      A boilerplate adds a bunch of helpful starting styles like default font stacks, spacing
+      rules, utility classes, styling for buttons, form elements, etc.<br>
+      It’s basically a “starter kit” for your CSS, not just a cleanup.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">Why use a boilerplate? (When does it help/hurt?)</h2>
+    <p>
+      It helps when you’re starting a project and want the basics already set up so you’re
+      not reinventing boring stuff (like buttons or form spacing).<br>
+      It hurts if you don’t need all of it, it can add a ton of styles you end up fighting against
+      or deleting.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">Why is Normalize.css different from resets? (Philosophy shift)</h2>
+    <p>
+      Normalize doesn’t wipe everything out.<br>
+      Instead of clearing all defaults, it tries to make the browser defaults consistent. So
+      instead of “zero everything,” it’s “keep the good defaults, fix the weird ones.”<br>
+      It’s more gentle, more practical, and less destructive than the old-school resets.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">What changed between 2007 and now? (From Meyer to modern resets)</h2>
+    <p>
+      Browsers are way more consistent now, so we don’t need to nuke literally everything
+      anymore.<br>
+      Developers realized that destroying all default styles was actually a pain because
+      you had to restyle basic elements from scratch.<br>
+      Modern resets focus on small, targeted fixes things browsers still disagree on (like
+      images, buttons, text wrapping), not the giant universal wipeout.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">What browser inconsistencies bothered developers in 2007?</h2>
+    <p>
+      Stuff like random margins on &lt;body&gt;, different default line-height, lists showing
+      bullets differently, headings having different sizes in every browser, and form
+      elements being totally inconsistent between browsers. Basically everything looked
+      unpredictable.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="heading">Other reset/normalize approaches (2–3 examples)</h2>
+    <ul>
+      <li>Normalize.css: The famous “don’t wipe everything, just fix inconsistencies”
+      approach.</li>
+      <li>Sanitize.css: A modern, more opinionated normalizer.</li>
+      <li>Andy Bell’s Modern CSS Reset: Minimal and focused on practical issues.</li>
+    </ul>
+  </section>
+  
+  <a href="https://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/">Eric Meyer's "Reset Reasoning" (2007)</a>
+  <br>
+  <a href="https://www.joshwcomeau.com/css/custom-css-reset/"> Josh Comeau's "A Modern CSS Reset</a>
+  <br>
+  <a href="https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/"> Jeff Starr's "Killer Collection of CSS Resets</a>
+
+</main>
+
+</body>
+</html>
