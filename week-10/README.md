@@ -40,15 +40,29 @@ The table compares a few featured pressings (Hotel California, American Idiot, T
 This fits the “product data / comparison” category listed in the brief.
 
 ## Challenges encountered and solutions
-For the required table, I chose product details / specs and pricing:
+Getting all the sections to match the Figma layout
 
-Table ID: data-table
+Challenge: The header, stripes, hero, and record logo all needed to line up in a very specific way to match the screenshot.
 
-Columns: Album, Pressing, Speed, Color, Price
+Solution: I reorganized the HTML into clear sections (header, main, section, footer) and used flexbox and margin/padding adjustments. I also separated the nav stripe (.nav-divider) from the regular red/white section dividers so they could be styled differently.
 
-The table compares a few featured pressings (Hotel California, American Idiot, Thriller, and a “Mystery Mix”) so users can see speed, color variants, and price at a glance.
+Images not showing up (logos and vinyl artwork)
 
-This fits the “product data / comparison” category listed in the brief.
+Challenge: Some images didn’t load because of file path issues and inconsistent folder structure.
+
+Solution: I simplified the paths by putting the key images in the same folder as index.html and updated the src attributes to match the exact filenames (e.g., eagles-vinyl.png, header-logo.png, etc.).
+
+Product card layout and unwanted “extra” boxes
+
+Challenge: Earlier versions of the vinyl cards had inner boxes and drop shadows that didn’t match the design, and the album images were too small.
+
+Solution: I rebuilt the vinyl cards from scratch with a single gold card, one large image at the top, and the text + price pill underneath. The inner “floating” square was removed completely, and the image size is now controlled by .vinyl-image { width: 100%; }.
+
+Embedding the video and adding custom play/pause buttons
+
+Challenge: The YouTube video needed to sit inside a “TV frame” with two circular buttons underneath that actually control playback.
+
+Solution: I wrapped the iframe in a .video-frame and .video-frame-inner, then used the YouTube Iframe API (onYouTubeIframeAPIReady) to connect the custom buttons to player.playVideo() and player.pauseVideo().
 
 ## Key learnings
 I got a lot more comfortable using semantic HTML (header, main, section, article, table, etc.) and it made the page feel more organized and easier to read.
