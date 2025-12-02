@@ -9,11 +9,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500;1,600&family=Quicksand:wght@400;500;600;700&family=WindSong:wght@400;500&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-  <!-- STICKY HEADER / NAV -->
+  <!-- FIXED HEADER / NAV -->
   <header id="header">
     <div class="container header-inner">
       <a href="#hero" class="brand">
@@ -44,7 +43,7 @@
       </button>
     </div>
 
-    <!-- NAV-ONLY GOLD/RED DIVIDER -->
+    <!-- gold / red stripe just for nav -->
     <div class="nav-divider" aria-hidden="true"></div>
   </header>
 
@@ -60,7 +59,7 @@
       </div>
     </section>
 
-    <!-- HERO DIVIDER WITH LOGO (ABOVE PRODUCT CARDS) -->
+    <!-- RED / WHITE DIVIDER + SPINNY LOGO ICON -->
     <div class="hero-divider">
       <div class="section-divider" aria-hidden="true"></div>
       <img
@@ -69,18 +68,17 @@
         class="hero-record">
     </div>
 
-    <!-- FEATURED VINYL / FEATURES SECTION -->
+    <!-- FEATURED VINYL (FEATURES SECTION) -->
     <section id="features" class="section vinyl-section">
       <div class="container">
         <h2 class="section-heading">Featured Spins</h2>
 
         <div class="vinyl-grid">
           <article class="vinyl-card">
-            <div class="vinyl-image-wrap">
-              <img
-                src="images/eagles-vinyl.png"
-                alt="Hotel California album cover with vinyl by Eagles">
-            </div>
+            <img
+              src="images/eagles-vinyl.png"
+              alt="Hotel California album cover with vinyl by Eagles"
+              class="vinyl-image">
             <div class="vinyl-info">
               <h3>Hotel California</h3>
               <p class="vinyl-artist">Eagles</p>
@@ -89,11 +87,10 @@
           </article>
 
           <article class="vinyl-card">
-            <div class="vinyl-image-wrap">
-              <img
-                src="images/greenday-vinyl.png"
-                alt="American Idiot album cover with vinyl by Green Day">
-            </div>
+            <img
+              src="images/greenday-vinyl.png"
+              alt="American Idiot album cover with vinyl by Green Day"
+              class="vinyl-image">
             <div class="vinyl-info">
               <h3>American Idiot</h3>
               <p class="vinyl-artist">Green Day</p>
@@ -102,11 +99,10 @@
           </article>
 
           <article class="vinyl-card">
-            <div class="vinyl-image-wrap">
-              <img
-                src="images/mj-vinyl.png"
-                alt="Thriller album cover with vinyl by Michael Jackson">
-            </div>
+            <img
+              src="images/mj-vinyl.png"
+              alt="Thriller album cover with vinyl by Michael Jackson"
+              class="vinyl-image">
             <div class="vinyl-info">
               <h3>Thriller</h3>
               <p class="vinyl-artist">Michael Jackson</p>
@@ -117,11 +113,12 @@
       </div>
     </section>
 
-    <!-- VIDEO SECTION -->
+    <!-- DIVIDER -->
     <div class="section-divider" aria-hidden="true"></div>
 
+    <!-- VIDEO / HOW IT'S MADE -->
     <section id="video-section" class="section press-section">
-      <div class="container press-inner">
+      <div class="container">
         <h2 class="press-heading">The Art of the Press</h2>
 
         <div class="video-frame">
@@ -150,9 +147,10 @@
       </div>
     </section>
 
-    <!-- DATA TABLE SECTION -->
+    <!-- DIVIDER -->
     <div class="section-divider" aria-hidden="true"></div>
 
+    <!-- DATA TABLE -->
     <section id="data" class="section data-section">
       <div class="container">
         <h2 class="section-heading">Pressing Details</h2>
@@ -206,13 +204,13 @@
       </div>
     </section>
 
-    <!-- CONTACT / NEWSLETTER SECTION -->
+    <!-- DIVIDER -->
     <div class="section-divider" aria-hidden="true"></div>
 
+    <!-- NEWSLETTER / CONTACT -->
     <section id="contact" class="section contact-section">
       <div class="container contact-inner">
         <div class="newsletter-stack">
-          <!-- teal form card -->
           <div class="contact-card">
             <h2 class="section-heading">Join our Newsletter</h2>
             <p class="section-sub">
@@ -226,20 +224,12 @@
               method="post">
               <div class="form-field">
                 <label for="name">Name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required>
+                <input id="name" name="name" type="text" required>
               </div>
 
               <div class="form-field">
                 <label for="email">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required>
+                <input id="email" name="email" type="email" required>
               </div>
 
               <div class="form-field">
@@ -257,7 +247,6 @@
             </form>
           </div>
 
-          <!-- yellow circle image behind form -->
           <div class="newsletter-circle">
             <img
               src="images/vinyl-newsletter.png"
@@ -268,7 +257,7 @@
     </section>
   </main>
 
-  <!-- NEWSLETTER OVERLAY + CONFETTI -->
+  <!-- NEWSLETTER POP-UP + CONFETTI -->
   <div id="newsletter-overlay" class="overlay" aria-hidden="true">
     <div class="overlay-backdrop"></div>
     <div class="overlay-card">
@@ -309,11 +298,11 @@
       }
 
       (function () {
+        // footer year
         var span = document.getElementById('year');
-        if (span) {
-          span.textContent = new Date().getFullYear();
-        }
+        if (span) span.textContent = new Date().getFullYear();
 
+        // video play / pause
         var playBtn = document.getElementById('play-btn');
         var pauseBtn = document.getElementById('pause-btn');
 
@@ -333,7 +322,7 @@
           });
         }
 
-        /* Newsletter overlay + confetti */
+        // newsletter overlay + confetti
         var form = document.getElementById('contact-form');
         var overlay = document.getElementById('newsletter-overlay');
         var closeBtn = document.getElementById('overlay-close');
@@ -372,17 +361,16 @@
 
         if (form) {
           form.addEventListener('submit', function (e) {
-            e.preventDefault(); // show banner instead of navigating
+            e.preventDefault();
             showOverlay();
           });
         }
 
-        if (closeBtn) {
-          closeBtn.addEventListener('click', hideOverlay);
-        }
+        if (closeBtn) closeBtn.addEventListener('click', hideOverlay);
 
         overlay.addEventListener('click', function (e) {
-          if (e.target === overlay || e.target === document.querySelector('.overlay-backdrop')) {
+          if (e.target === overlay ||
+              e.target === document.querySelector('.overlay-backdrop')) {
             hideOverlay();
           }
         });
