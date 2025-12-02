@@ -30,6 +30,13 @@ body {
   background-color: var(--brown);
 }
 
+/* make all <img> behave predictably */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Visually hidden helper */
 .visually-hidden {
   position: absolute;
@@ -310,7 +317,7 @@ main {
   gap: 2rem;
 }
 
-/* card – just outer gold card + big image inside */
+/* card – gold card + big image inside */
 .vinyl-card {
   width: 320px;
   max-width: 100%;
@@ -351,8 +358,6 @@ main {
 /* album+vinyl image */
 .vinyl-image {
   width: 100%;
-  display: block;
-  object-fit: cover;
   border-radius: 0.8rem;
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.65);
 }
