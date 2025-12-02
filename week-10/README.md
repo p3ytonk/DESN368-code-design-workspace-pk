@@ -62,3 +62,5 @@ I saw how a small amount of animation and transform (like a soft hover or fade-i
 I figured out how to control a YouTube video with custom buttons using the iframe API, which made the “TV” section feel more like a real interaction.
 
 Overall, I learned that redoing and refining the code is normal. The site got better each time I cleaned things up and fixed one problem at a time.
+
+(created with the assistance of ChatGPT to help clean up and organize code/figure out how to manipulate certain elements the way I intended)
