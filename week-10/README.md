@@ -54,9 +54,9 @@ Solution: I simplified the paths by putting the key images in the same folder as
 
 Product card layout and unwanted “extra” boxes
 
-Challenge: Earlier versions of the vinyl cards had inner boxes and drop shadows that didn’t match the design, and the album images were too small.
+Challenge: Earlier versions of the vinyl cards had inner boxes and drop shadows that didn’t match the design, and the album images were too small. Unwanted shadow boxes included in product cards.
 
-Solution: I rebuilt the vinyl cards from scratch with a single gold card, one large image at the top, and the text + price pill underneath. The inner “floating” square was removed completely, and the image size is now controlled by .vinyl-image { width: 100%; }.
+Solution: Unfortunately, this one got me.
 
 Embedding the video and adding custom play/pause buttons
 
