@@ -66,11 +66,11 @@ body {
 }
 
 #header-img {
-  height: 60px;
+  height: 60px;          /* bigger for hierarchy */
   width: auto;
 }
 
-/* NAV LINKS */
+/* NAV LINKS – Playfair, all caps, one line */
 
 #nav-bar {
   display: flex;
@@ -114,7 +114,7 @@ body {
   outline-offset: 3px;
 }
 
-/* Search */
+/* Search (no icon) */
 
 .header-search {
   display: inline-flex;
@@ -212,7 +212,7 @@ body {
   margin: 0;
 }
 
-/* BIG logo icon aligned on stripe */
+/* BIGGER logo icon & aligned so stripe hits near center */
 .hero-record {
   position: absolute;
   right: 6%;
@@ -252,6 +252,10 @@ main {
 
 /* ---------- HERO ---------- */
 
+.hero {
+  text-align: left;
+}
+
 .hero-inner {
   display: grid;
   align-items: center;
@@ -262,6 +266,7 @@ main {
   justify-content: flex-start;
 }
 
+/* H1 requirement */
 .hero-tagline {
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -275,6 +280,8 @@ main {
     0 0 4px rgba(0, 0, 0, 0.6),
     2px 2px 0 var(--gold);
 }
+
+/* ANIMATION requirement: fade / slide up – slowed down */
 
 @keyframes fade-up {
   from {
@@ -315,6 +322,7 @@ main {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+  /* grainy texture */
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.15) 1px,
@@ -323,22 +331,31 @@ main {
   background-size: 3px 3px;
 }
 
+/* smooth scale-up hover animation on the card */
 .vinyl-card:hover,
 .vinyl-card:focus-within {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.7);
 }
 
-/* BIG vinyl image directly in card, no inner square */
-.vinyl-image {
-  width: 92%;
-  max-width: 340px;
-  display: block;
-  margin: 0.3rem auto 0.4rem;
-  object-fit: contain;
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.65);
-  border-radius: 0.6rem;
+/* IMAGE WRAP – NO EXTRA SQUARE, JUST THE VINYL, LARGE & CENTERED */
+.vinyl-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
+
+.vinyl-image-wrap img {
+  width: 82%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.55);
+}
+
+/* info */
 
 .vinyl-info h3 {
   margin: 0.6rem 0 0.2rem;
@@ -355,8 +372,7 @@ main {
   font-size: 0.95rem;
 }
 
-/* PRICE button */
-
+/* PRICE button: Playfair semibold italic badge */
 .vinyl-price {
   margin: 0.55rem 0 0.1rem;
   padding: 0.6rem 2.8rem;
@@ -372,6 +388,8 @@ main {
   cursor: pointer;
   color: var(--brown);
 }
+
+/* PRICE GLOW ANIMATION – only on the pill itself */
 
 @keyframes price-glow {
   0% {
@@ -411,6 +429,7 @@ main {
   margin-inline: auto;
   position: relative;
   background-color: var(--teal);
+  /* teal grain texture */
   background-image: radial-gradient(
       circle,
       rgba(0, 0, 0, 0.12) 1px,
@@ -422,6 +441,7 @@ main {
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
 }
 
+/* inner wrapper to maintain aspect ratio for iframe */
 .video-frame-inner {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -437,6 +457,7 @@ main {
   border: none;
 }
 
+/* Bottom knobs aligned + larger + more space */
 .tv-knobs {
   position: absolute;
   bottom: 1.8rem;
@@ -500,6 +521,7 @@ main {
   text-align: left;
 }
 
+/* even rows teal; hover yellow */
 #data-table tbody tr:nth-child(even) {
   background-color: var(--teal);
   color: var(--white);
@@ -521,12 +543,14 @@ main {
   justify-content: center;
 }
 
+/* stack for form + circle, centered together */
 .newsletter-stack {
   position: relative;
   display: inline-block;
   margin-bottom: 4rem;
 }
 
+/* teal newsletter box */
 .contact-card {
   background-color: var(--teal);
   color: var(--white);
@@ -544,6 +568,7 @@ main {
   color: var(--white);
 }
 
+/* yellow circle image, vertically centered behind form */
 .newsletter-circle {
   position: absolute;
   top: 50%;
@@ -558,6 +583,8 @@ main {
   display: block;
   filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.7));
 }
+
+/* Form */
 
 .contact-form {
   display: grid;
@@ -583,6 +610,7 @@ main {
   color: var(--brown);
 }
 
+/* Focus + validation states */
 .form-field input:focus-visible,
 .form-field textarea:focus-visible {
   outline: 2px solid var(--red);
@@ -630,6 +658,7 @@ main {
   color: var(--brown);
 }
 
+/* TRANSFORM requirement also on CTA */
 .btn.primary:hover,
 .btn.primary:focus-visible,
 .btn.secondary:hover,
@@ -691,6 +720,7 @@ main {
   overflow: hidden;
 }
 
+/* confetti pieces */
 .confetti-piece {
   position: fixed;
   top: -10vh;
@@ -713,6 +743,7 @@ footer {
   position: relative;
 }
 
+/* footer bar uses red/white divider style */
 footer::before {
   content: "";
   position: absolute;
@@ -827,7 +858,7 @@ footer::after {
   }
 }
 
-/* Reduced motion */
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
