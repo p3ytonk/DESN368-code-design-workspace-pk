@@ -1,4 +1,10 @@
+/* ====================================================
+   Eclectic Vinyl Records - FULL styles.css
+   Replace your existing CSS file with this one
+   ==================================================== */
+
 /* ---------- RESET & BASE ---------- */
+
 *,
 *::before,
 *::after {
@@ -25,7 +31,7 @@ body {
   background-color: var(--brown);
 }
 
-/* visually hidden helper */
+/* Visually hidden helper */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +43,7 @@ body {
   border: 0;
 }
 
-/* layout container */
+/* Layout container */
 .container {
   width: min(1180px, 100% - 2.5rem);
   margin-inline: auto;
@@ -68,7 +74,7 @@ body {
 }
 
 #header-img {
-  height: 60px;
+  height: 70px; /* a bit bigger for hierarchy */
   width: auto;
 }
 
@@ -114,7 +120,7 @@ body {
   outline-offset: 3px;
 }
 
-/* search (no icon) */
+/* Search (no magnifying glass) */
 .header-search {
   display: inline-flex;
   align-items: center;
@@ -142,7 +148,7 @@ body {
   outline: none;
 }
 
-/* bag icon */
+/* Bag icon */
 .cart-button {
   border: none;
   background-color: transparent;
@@ -158,7 +164,7 @@ body {
   height: auto;
 }
 
-/* gold / red nav stripe */
+/* Gold / red nav stripe just under header */
 .nav-divider {
   height: 32px;
   background-color: var(--gold);
@@ -178,7 +184,7 @@ body {
     0 16px 0 var(--red);
 }
 
-/* ---------- GLOBAL RED / WHITE DIVIDER ---------- */
+/* ---------- GLOBAL RED / WHITE DIVIDERS ---------- */
 
 .section-divider {
   position: relative;
@@ -199,37 +205,10 @@ body {
     0 16px 0 var(--white);
 }
 
-/* hero divider with record */
-.hero-divider {
-  position: relative;
-  margin-block: 0 2.5rem;
-}
-
-.hero-divider .section-divider {
-  margin: 0;
-}
-
-/* LOGO ICON – larger + spin on hover */
-.hero-record {
-  position: absolute;
-  right: 6%;
-  top: -150px;
-  width: 340px;
-  height: auto;
-  pointer-events: none;
-  transform-origin: center;
-  transition: transform 0.7s ease-out;
-  pointer-events: auto; /* so hover works */
-}
-
-.hero-record:hover {
-  transform: rotate(360deg);
-}
-
-/* ---------- MAIN ---------- */
+/* ---------- HERO + SPINNING LOGO ICON ---------- */
 
 main {
-  padding-top: 110px; /* space for fixed header */
+  padding-top: 120px; /* space for fixed header + stripe */
 }
 
 .section {
@@ -252,8 +231,6 @@ main {
   margin-bottom: 2rem;
 }
 
-/* ---------- HERO ---------- */
-
 .hero-inner {
   display: grid;
   align-items: center;
@@ -269,7 +246,7 @@ main {
   font-style: italic;
   font-weight: 600;
   font-size: 3.1rem;
-  margin: 2.8rem 0 2.2rem;
+  margin: 3rem 0 2.2rem;
   max-width: 36rem;
   text-align: left;
   color: var(--white);
@@ -282,7 +259,7 @@ main {
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
@@ -294,21 +271,54 @@ main {
   animation: fade-up 1.6s ease-out both;
 }
 
-/* ---------- VINYL / FEATURES ---------- */
+/* Divider under hero with spinning logo icon */
+.hero-divider {
+  position: relative;
+  margin-block: 0 2.5rem;
+}
+
+.hero-divider .section-divider {
+  margin: 0;
+}
+
+/* big logo vinyl that spins on hover */
+.hero-record {
+  position: absolute;
+  right: 6%;
+  top: -150px;
+  width: 360px;
+  height: auto;
+  transform-origin: center;
+  transition: transform 0.7s ease-out;
+  pointer-events: auto;
+}
+
+.hero-record:hover {
+  transform: rotate(360deg);
+}
+
+/* ---------- FEATURED VINYL / CARDS ---------- */
 
 .vinyl-section {
   padding-top: 0;
 }
 
-.vinyl-grid {
-  display: grid;
-  gap: 1.75rem;
+/* row of cards */
+.vinyl-grid,
+.vinyl-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
+/* card – no inner square, just the album+vinyl image */
 .vinyl-card {
+  width: 320px;
+  max-width: 100%;
   background-color: var(--gold);
   border-radius: 2.4rem;
-  padding: 1.9rem 1.9rem 2.2rem;
+  padding: 1.6rem 1.6rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,24 +337,31 @@ main {
   background-size: 3px 3px;
 }
 
-/* smooth card scale */
+/* just in case any old “inner square” elements still exist, hide them */
+.vinyl-card > div:not(.vinyl-info):not(.price-wrapper),
+.vinyl-card > figure {
+  display: none;
+}
+
+/* smooth hover scale on the entire card */
 .vinyl-card:hover,
 .vinyl-card:focus-within {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.7);
 }
 
-/* BIG vinyl – NO inner square */
-.vinyl-image {
-  width: 90%;
-  max-width: 320px;
+/* album+vinyl image */
+.vinyl-image,
+.vinyl-card img {
+  width: 100%;
   display: block;
-  margin: 0.3rem auto 0.7rem;
-  object-fit: contain;
+  margin: 0 0 0.9rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.65);
-  border-radius: 0.6rem;
 }
 
+/* text area */
 .vinyl-info h3 {
   margin: 0.2rem 0 0.15rem;
   font-family: "Playfair Display", serif;
@@ -375,7 +392,7 @@ main {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* slower red glow on price only */
+/* red glow animation ONLY on price button */
 @keyframes price-glow {
   0% {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
@@ -396,7 +413,7 @@ main {
   outline: none;
 }
 
-/* ---------- VIDEO SECTION ---------- */
+/* ---------- VIDEO SECTION / HOW IT'S MADE ---------- */
 
 .press-heading {
   font-family: "WindSong", cursive;
@@ -436,7 +453,7 @@ main {
   border: none;
 }
 
-/* TV knobs */
+/* TV knobs (play / pause buttons) */
 .tv-knobs {
   position: absolute;
   bottom: 1.8rem;
@@ -447,8 +464,8 @@ main {
 }
 
 .tv-knob {
-  width: 54px;
-  height: 54px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   border: none;
   background-color: var(--white);
@@ -467,7 +484,13 @@ main {
   line-height: 1;
 }
 
-/* ---------- TABLE ---------- */
+/* focus ring on knobs */
+.tv-knob:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
+}
+
+/* ---------- DATA TABLE (DETAILS) ---------- */
 
 .table-wrapper {
   width: 100%;
@@ -496,7 +519,7 @@ main {
   text-align: left;
 }
 
-/* teal alternate rows, yellow on hover */
+/* teal alt rows, yellow hover */
 #data-table tbody tr:nth-child(even) {
   background-color: var(--teal);
   color: var(--white);
@@ -507,7 +530,7 @@ main {
   color: var(--brown);
 }
 
-/* ---------- CONTACT / FORM ---------- */
+/* ---------- CONTACT / NEWSLETTER ---------- */
 
 .contact-inner {
   display: flex;
@@ -537,7 +560,7 @@ main {
   color: var(--white);
 }
 
-/* yellow vinyl circle behind */
+/* yellow vinyl circle behind newsletter */
 .newsletter-circle {
   position: absolute;
   top: 50%;
@@ -553,7 +576,7 @@ main {
   filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.7));
 }
 
-/* form */
+/* form layout */
 .contact-form {
   display: grid;
   gap: 0.9rem;
@@ -596,7 +619,7 @@ main {
   border-color: #36a269;
 }
 
-/* buttons */
+/* buttons (transform requirement) */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -625,7 +648,6 @@ main {
   color: var(--brown);
 }
 
-/* transform requirement */
 .btn.primary:hover,
 .btn.primary:focus-visible,
 .btn.secondary:hover,
@@ -635,7 +657,7 @@ main {
   outline: none;
 }
 
-/* ---------- OVERLAY + CONFETTI ---------- */
+/* ---------- OVERLAY + CONFETTI (Spin me in) ---------- */
 
 .overlay {
   position: fixed;
@@ -767,9 +789,7 @@ footer::after {
 /* ---------- RESPONSIVE ---------- */
 
 @media (min-width: 768px) {
-  .vinyl-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+  /* nothing special – row already 3 cards */
 }
 
 @media (max-width: 767.98px) {
@@ -807,6 +827,11 @@ footer::after {
     display: none; /* hide giant record on small screens */
   }
 
+  .vinyl-card {
+    width: 100%;
+    max-width: 380px;
+  }
+
   .video-frame {
     padding: 4rem 1.6rem 5.6rem;
   }
@@ -824,7 +849,7 @@ footer::after {
   }
 }
 
-/* reduced motion */
+/* reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
