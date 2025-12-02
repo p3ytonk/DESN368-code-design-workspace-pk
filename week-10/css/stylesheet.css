@@ -1,3 +1,4 @@
+/* ---------- RESET & BASE ---------- */
 *,
 *::before,
 *::after {
@@ -24,6 +25,7 @@ body {
   background-color: var(--brown);
 }
 
+/* Visually hidden utility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,11 +37,13 @@ body {
   border: 0;
 }
 
+/* Layout helper */
 .container {
   width: min(1180px, 100% - 2.5rem);
   margin-inline: auto;
 }
 
+/* ---------- HEADER / NAV ---------- */
 
 #header {
   position: sticky;
@@ -62,10 +66,11 @@ body {
 }
 
 #header-img {
-  height: 40px;
+  height: 60px;          /* bigger for hierarchy */
   width: auto;
 }
 
+/* NAV LINKS – Playfair, all caps, one line */
 
 #nav-bar {
   display: flex;
@@ -109,6 +114,7 @@ body {
   outline-offset: 3px;
 }
 
+/* Search (no icon) */
 
 .header-search {
   display: inline-flex;
@@ -150,10 +156,11 @@ body {
 }
 
 .cart-icon {
-  width: 28px;
+  width: 32px;
   height: auto;
 }
 
+/* NAV-ONLY GOLD/RED DIVIDER */
 
 .nav-divider {
   height: 32px;
@@ -174,6 +181,7 @@ body {
     0 16px 0 var(--red);
 }
 
+/* ---------- DIVIDER STRIPES (GLOBAL, RED/WHITE) ---------- */
 
 .section-divider {
   position: relative;
@@ -194,6 +202,7 @@ body {
     0 16px 0 var(--white);
 }
 
+/* hero-specific divider wrapper with logo on the right */
 .hero-divider {
   position: relative;
   margin-block: 0 2.5rem;
@@ -206,21 +215,23 @@ body {
 .hero-record {
   position: absolute;
   right: 8%;
-  top: -86px;
-  width: 220px;
+  top: -120px;          /* adjusted so stripe crosses closer to center */
+  width: 260px;         /* larger logo icon */
   height: auto;
   pointer-events: none;
 }
 
+/* ---------- MAIN LAYOUT ---------- */
 
 main {
-  padding-top: 4.2rem;
+  padding-top: 4.6rem;
 }
 
 .section {
   padding-block: 3.5rem;
 }
 
+/* Section headings */
 
 .section-heading {
   font-family: "Playfair Display", serif;
@@ -254,6 +265,7 @@ main {
   justify-content: flex-start;
 }
 
+/* H1 requirement */
 .hero-tagline {
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -268,6 +280,7 @@ main {
     2px 2px 0 var(--gold);
 }
 
+/* ANIMATION requirement: fade / slide up – slowed down */
 
 @keyframes fade-up {
   from {
@@ -284,7 +297,7 @@ main {
   animation: fade-up 1.6s ease-out both;
 }
 
-/* ---------- VINYL/FEATURES ---------- */
+/* ---------- VINYL / FEATURES ---------- */
 
 .vinyl-section {
   padding-top: 0;
@@ -297,8 +310,8 @@ main {
 
 .vinyl-card {
   background-color: var(--gold);
-  border-radius: 2.2rem;
-  padding: 1.5rem 1.8rem 2.1rem;
+  border-radius: 2.4rem;
+  padding: 1.7rem 1.9rem 2.2rem;
   display: grid;
   gap: 1.1rem;
   justify-items: center;
@@ -308,6 +321,7 @@ main {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+  /* grainy texture */
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.15) 1px,
@@ -316,47 +330,43 @@ main {
   background-size: 3px 3px;
 }
 
+/* smooth scale-up hover animation on the card */
 .vinyl-card:hover,
 .vinyl-card:focus-within {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.7);
 }
 
+/* image area – bigger, no brown square, no dark disc behind */
 .vinyl-image-wrap {
   position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 1.1rem;
-  overflow: hidden;
-  background-color: var(--brown);
+  width: 260px;
+  height: 260px;
+  border-radius: 1.5rem;
+  overflow: visible;
+  background: transparent;
 }
 
 .vinyl-image-wrap img {
-  position: absolute;
-  inset: 0;
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55);
 }
 
+/* hide the gray record disc overlay */
 .vinyl-disc {
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #4c4c4c, #0c0c0c);
-  opacity: 0.35;
+  display: none;
 }
 
 .vinyl-info h3 {
-  margin: 0.25rem 0 0.2rem;
+  margin: 0.45rem 0 0.2rem;
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
@@ -366,9 +376,10 @@ main {
   font-size: 0.95rem;
 }
 
+/* PRICE button: Playfair semibold italic badge */
 .vinyl-price {
-  margin: 0.45rem 0 0.1rem;
-  padding: 0.55rem 2.6rem;
+  margin: 0.55rem 0 0.1rem;
+  padding: 0.6rem 2.8rem;
   border-radius: 999px;
   background-color: var(--white);
   font-family: "Playfair Display", serif;
@@ -382,6 +393,7 @@ main {
   color: var(--brown);
 }
 
+/* PRICE GLOW ANIMATION – only on the pill itself */
 
 @keyframes price-glow {
   0% {
@@ -421,6 +433,7 @@ main {
   margin-inline: auto;
   position: relative;
   background-color: var(--teal);
+  /* teal grain texture */
   background-image: radial-gradient(
       circle,
       rgba(0, 0, 0, 0.12) 1px,
@@ -428,10 +441,11 @@ main {
     );
   background-size: 3px 3px;
   border-radius: 2rem;
-  padding: 4.5rem 4.5rem 5.2rem;
+  padding: 4.5rem 4.5rem 5.6rem;
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
 }
 
+/* inner wrapper to maintain aspect ratio for iframe */
 .video-frame-inner {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -447,18 +461,19 @@ main {
   border: none;
 }
 
+/* Bottom knobs aligned + larger + more space */
 .tv-knobs {
   position: absolute;
-  bottom: 1.7rem;
+  bottom: 1.8rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 9.5rem;
+  gap: 10.5rem;
 }
 
 .tv-knob {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   border: none;
   background-color: var(--white);
@@ -473,7 +488,7 @@ main {
 
 .tv-icon {
   color: var(--red);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -510,6 +525,7 @@ main {
   text-align: left;
 }
 
+/* even rows teal; hover yellow */
 #data-table tbody tr:nth-child(even) {
   background-color: var(--teal);
   color: var(--white);
@@ -531,12 +547,14 @@ main {
   justify-content: center;
 }
 
+/* stack for form + circle, centered together */
 .newsletter-stack {
   position: relative;
   display: inline-block;
   margin-bottom: 4rem;
 }
 
+/* teal newsletter box */
 .contact-card {
   background-color: var(--teal);
   color: var(--white);
@@ -554,10 +572,12 @@ main {
   color: var(--white);
 }
 
+/* yellow circle image, vertically centered behind form */
 .newsletter-circle {
   position: absolute;
-  right: -140px;
-  bottom: -140px;
+  top: 50%;
+  right: -170px;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -594,6 +614,7 @@ main {
   color: var(--brown);
 }
 
+/* Focus + validation states */
 .form-field input:focus-visible,
 .form-field textarea:focus-visible {
   outline: 2px solid var(--red);
@@ -641,6 +662,7 @@ main {
   color: var(--brown);
 }
 
+/* TRANSFORM requirement also on CTA */
 .btn.primary:hover,
 .btn.primary:focus-visible,
 .btn.secondary:hover,
@@ -650,6 +672,7 @@ main {
   outline: none;
 }
 
+/* ---------- OVERLAY + CONFETTI ---------- */
 
 .overlay {
   position: fixed;
@@ -701,6 +724,7 @@ main {
   overflow: hidden;
 }
 
+/* confetti pieces */
 .confetti-piece {
   position: fixed;
   top: -10vh;
@@ -716,12 +740,14 @@ main {
   }
 }
 
+/* ---------- FOOTER ---------- */
 
 footer {
   background-color: var(--brown);
   position: relative;
 }
 
+/* footer bar uses red/white divider style */
 footer::before {
   content: "";
   position: absolute;
@@ -776,6 +802,7 @@ footer::after {
   font-size: 0.85rem;
 }
 
+/* ---------- RESPONSIVE ---------- */
 
 @media (min-width: 768px) {
   .vinyl-grid {
@@ -819,16 +846,15 @@ footer::after {
   }
 
   .video-frame {
-    padding: 4rem 1.6rem 5.2rem;
+    padding: 4rem 1.6rem 5.6rem;
   }
 
   .tv-knobs {
-    gap: 6.5rem;
+    gap: 7.5rem;
   }
 
   .newsletter-circle {
-    right: -80px;
-    bottom: -80px;
+    right: -110px;
   }
 
   .newsletter-circle img {
@@ -836,6 +862,7 @@ footer::after {
   }
 }
 
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -844,4 +871,3 @@ footer::after {
     scroll-behavior: auto !important;
   }
 }
-
