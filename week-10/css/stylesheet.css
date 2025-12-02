@@ -1,6 +1,5 @@
 /* ====================================================
    Eclectic Vinyl Records - FULL styles.css
-   Replace your existing CSS file with this one
    ==================================================== */
 
 /* ---------- RESET & BASE ---------- */
@@ -74,7 +73,7 @@ body {
 }
 
 #header-img {
-  height: 70px; /* a bit bigger for hierarchy */
+  height: 70px;
   width: auto;
 }
 
@@ -120,7 +119,7 @@ body {
   outline-offset: 3px;
 }
 
-/* Search (no magnifying glass) */
+/* Search (no icon) */
 .header-search {
   display: inline-flex;
   align-items: center;
@@ -164,7 +163,7 @@ body {
   height: auto;
 }
 
-/* Gold / red nav stripe just under header */
+/* Gold / red nav stripe */
 .nav-divider {
   height: 32px;
   background-color: var(--gold);
@@ -304,7 +303,6 @@ main {
 }
 
 /* row of cards */
-.vinyl-grid,
 .vinyl-row {
   display: flex;
   flex-wrap: wrap;
@@ -312,7 +310,7 @@ main {
   gap: 2rem;
 }
 
-/* card – no inner square, just the album+vinyl image */
+/* card – just outer gold card + big image inside */
 .vinyl-card {
   width: 320px;
   max-width: 100%;
@@ -337,25 +335,23 @@ main {
   background-size: 3px 3px;
 }
 
-/* just in case any old “inner square” elements still exist, hide them */
-.vinyl-card > div:not(.vinyl-info):not(.price-wrapper),
-.vinyl-card > figure {
-  display: none;
-}
-
-/* smooth hover scale on the entire card */
+/* smooth hover on entire card */
 .vinyl-card:hover,
 .vinyl-card:focus-within {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.7);
 }
 
+/* figure wrapper to remove default margins */
+.vinyl-figure {
+  margin: 0 0 0.9rem;
+  width: 100%;
+}
+
 /* album+vinyl image */
-.vinyl-image,
-.vinyl-card img {
+.vinyl-image {
   width: 100%;
   display: block;
-  margin: 0 0 0.9rem;
   object-fit: cover;
   border-radius: 0.8rem;
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.65);
@@ -484,7 +480,6 @@ main {
   line-height: 1;
 }
 
-/* focus ring on knobs */
 .tv-knob:focus-visible {
   outline: 2px solid var(--red);
   outline-offset: 4px;
@@ -619,7 +614,7 @@ main {
   border-color: #36a269;
 }
 
-/* buttons (transform requirement) */
+/* buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -787,10 +782,6 @@ footer::after {
 }
 
 /* ---------- RESPONSIVE ---------- */
-
-@media (min-width: 768px) {
-  /* nothing special – row already 3 cards */
-}
 
 @media (max-width: 767.98px) {
   .header-inner {
