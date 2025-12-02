@@ -50,7 +50,7 @@ The table compares a few featured pressings (Hotel California, American Idiot, T
 
 This fits the “product data / comparison” category listed in the brief.
 
-**Key learnings**
+## Key learnings
 I got a lot more comfortable using semantic HTML (header, main, section, article, table, etc.) and it made the page feel more organized and easier to read.
 
 I learned how picky file paths and filenames are — if one letter is off, the image just won’t show. Keeping all my images in a consistent place helped a ton.
