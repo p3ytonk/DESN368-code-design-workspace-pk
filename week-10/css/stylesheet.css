@@ -25,7 +25,7 @@ body {
   background-color: var(--brown);
 }
 
-/* Visually hidden utility */
+/* visually hidden helper */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +37,7 @@ body {
   border: 0;
 }
 
-/* Layout helper */
+/* layout container */
 .container {
   width: min(1180px, 100% - 2.5rem);
   margin-inline: auto;
@@ -46,8 +46,10 @@ body {
 /* ---------- HEADER / NAV ---------- */
 
 #header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   background-color: var(--brown);
 }
@@ -66,11 +68,9 @@ body {
 }
 
 #header-img {
-  height: 60px;          /* bigger for hierarchy */
+  height: 60px;
   width: auto;
 }
-
-/* NAV LINKS – Playfair, all caps, one line */
 
 #nav-bar {
   display: flex;
@@ -114,8 +114,7 @@ body {
   outline-offset: 3px;
 }
 
-/* Search (no icon) */
-
+/* search (no icon) */
 .header-search {
   display: inline-flex;
   align-items: center;
@@ -144,7 +143,6 @@ body {
 }
 
 /* bag icon */
-
 .cart-button {
   border: none;
   background-color: transparent;
@@ -160,8 +158,7 @@ body {
   height: auto;
 }
 
-/* NAV-ONLY GOLD/RED DIVIDER */
-
+/* gold / red nav stripe */
 .nav-divider {
   height: 32px;
   background-color: var(--gold);
@@ -181,7 +178,7 @@ body {
     0 16px 0 var(--red);
 }
 
-/* ---------- DIVIDER STRIPES (GLOBAL, RED/WHITE) ---------- */
+/* ---------- GLOBAL RED / WHITE DIVIDER ---------- */
 
 .section-divider {
   position: relative;
@@ -202,7 +199,7 @@ body {
     0 16px 0 var(--white);
 }
 
-/* hero-specific divider wrapper with logo on the right */
+/* hero divider with record */
 .hero-divider {
   position: relative;
   margin-block: 0 2.5rem;
@@ -212,7 +209,7 @@ body {
   margin: 0;
 }
 
-/* BIGGER logo icon & aligned so stripe hits near center */
+/* LOGO ICON – larger + spin on hover */
 .hero-record {
   position: absolute;
   right: 6%;
@@ -220,19 +217,24 @@ body {
   width: 340px;
   height: auto;
   pointer-events: none;
+  transform-origin: center;
+  transition: transform 0.7s ease-out;
+  pointer-events: auto; /* so hover works */
 }
 
-/* ---------- MAIN LAYOUT ---------- */
+.hero-record:hover {
+  transform: rotate(360deg);
+}
+
+/* ---------- MAIN ---------- */
 
 main {
-  padding-top: 4.6rem;
+  padding-top: 110px; /* space for fixed header */
 }
 
 .section {
   padding-block: 3.5rem;
 }
-
-/* Section headings */
 
 .section-heading {
   font-family: "Playfair Display", serif;
@@ -252,10 +254,6 @@ main {
 
 /* ---------- HERO ---------- */
 
-.hero {
-  text-align: left;
-}
-
 .hero-inner {
   display: grid;
   align-items: center;
@@ -266,7 +264,6 @@ main {
   justify-content: flex-start;
 }
 
-/* H1 requirement */
 .hero-tagline {
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -281,8 +278,7 @@ main {
     2px 2px 0 var(--gold);
 }
 
-/* ANIMATION requirement: fade / slide up – slowed down */
-
+/* hero fade animation (slowed) */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -313,16 +309,16 @@ main {
   background-color: var(--gold);
   border-radius: 2.4rem;
   padding: 1.9rem 1.9rem 2.2rem;
-  display: grid;
-  gap: 1.1rem;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: var(--brown);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.55);
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
-  /* grainy texture */
+  /* grain texture */
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.15) 1px,
@@ -331,37 +327,28 @@ main {
   background-size: 3px 3px;
 }
 
-/* smooth scale-up hover animation on the card */
+/* smooth card scale */
 .vinyl-card:hover,
 .vinyl-card:focus-within {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 24px 34px rgba(0, 0, 0, 0.7);
 }
 
-/* IMAGE WRAP – NO EXTRA SQUARE, JUST THE VINYL, LARGE & CENTERED */
-.vinyl-image-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.vinyl-image-wrap img {
-  width: 82%;
+/* BIG vinyl – NO inner square */
+.vinyl-image {
+  width: 90%;
   max-width: 320px;
-  height: auto;
-  object-fit: contain;
   display: block;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.55);
+  margin: 0.3rem auto 0.7rem;
+  object-fit: contain;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.65);
+  border-radius: 0.6rem;
 }
-
-/* info */
 
 .vinyl-info h3 {
-  margin: 0.6rem 0 0.2rem;
+  margin: 0.2rem 0 0.15rem;
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-style: normal;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -372,9 +359,9 @@ main {
   font-size: 0.95rem;
 }
 
-/* PRICE button: Playfair semibold italic badge */
+/* price pill */
 .vinyl-price {
-  margin: 0.55rem 0 0.1rem;
+  margin-top: 0.55rem;
   padding: 0.6rem 2.8rem;
   border-radius: 999px;
   background-color: var(--white);
@@ -382,15 +369,13 @@ main {
   font-weight: 600;
   font-style: italic;
   font-size: 1.15rem;
-  display: inline-block;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
   border: none;
   cursor: pointer;
   color: var(--brown);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* PRICE GLOW ANIMATION – only on the pill itself */
-
+/* slower red glow on price only */
 @keyframes price-glow {
   0% {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
@@ -411,11 +396,7 @@ main {
   outline: none;
 }
 
-/* ---------- VIDEO FRAME ---------- */
-
-.press-section {
-  background-color: var(--brown);
-}
+/* ---------- VIDEO SECTION ---------- */
 
 .press-heading {
   font-family: "WindSong", cursive;
@@ -429,7 +410,6 @@ main {
   margin-inline: auto;
   position: relative;
   background-color: var(--teal);
-  /* teal grain texture */
   background-image: radial-gradient(
       circle,
       rgba(0, 0, 0, 0.12) 1px,
@@ -441,7 +421,6 @@ main {
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
 }
 
-/* inner wrapper to maintain aspect ratio for iframe */
 .video-frame-inner {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -457,7 +436,7 @@ main {
   border: none;
 }
 
-/* Bottom knobs aligned + larger + more space */
+/* TV knobs */
 .tv-knobs {
   position: absolute;
   bottom: 1.8rem;
@@ -488,11 +467,7 @@ main {
   line-height: 1;
 }
 
-/* ---------- DATA TABLE ---------- */
-
-.data-section {
-  padding-top: 3.5rem;
-}
+/* ---------- TABLE ---------- */
 
 .table-wrapper {
   width: 100%;
@@ -521,7 +496,7 @@ main {
   text-align: left;
 }
 
-/* even rows teal; hover yellow */
+/* teal alternate rows, yellow on hover */
 #data-table tbody tr:nth-child(even) {
   background-color: var(--teal);
   color: var(--white);
@@ -534,23 +509,17 @@ main {
 
 /* ---------- CONTACT / FORM ---------- */
 
-.contact-section {
-  position: relative;
-}
-
 .contact-inner {
   display: flex;
   justify-content: center;
 }
 
-/* stack for form + circle, centered together */
 .newsletter-stack {
   position: relative;
   display: inline-block;
   margin-bottom: 4rem;
 }
 
-/* teal newsletter box */
 .contact-card {
   background-color: var(--teal);
   color: var(--white);
@@ -568,7 +537,7 @@ main {
   color: var(--white);
 }
 
-/* yellow circle image, vertically centered behind form */
+/* yellow vinyl circle behind */
 .newsletter-circle {
   position: absolute;
   top: 50%;
@@ -584,8 +553,7 @@ main {
   filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.7));
 }
 
-/* Form */
-
+/* form */
 .contact-form {
   display: grid;
   gap: 0.9rem;
@@ -610,7 +578,7 @@ main {
   color: var(--brown);
 }
 
-/* Focus + validation states */
+/* focus + validation */
 .form-field input:focus-visible,
 .form-field textarea:focus-visible {
   outline: 2px solid var(--red);
@@ -628,8 +596,7 @@ main {
   border-color: #36a269;
 }
 
-/* Buttons */
-
+/* buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -658,7 +625,7 @@ main {
   color: var(--brown);
 }
 
-/* TRANSFORM requirement also on CTA */
+/* transform requirement */
 .btn.primary:hover,
 .btn.primary:focus-visible,
 .btn.secondary:hover,
@@ -720,7 +687,6 @@ main {
   overflow: hidden;
 }
 
-/* confetti pieces */
 .confetti-piece {
   position: fixed;
   top: -10vh;
@@ -743,7 +709,7 @@ footer {
   position: relative;
 }
 
-/* footer bar uses red/white divider style */
+/* red / white stripe above footer */
 footer::before {
   content: "";
   position: absolute;
@@ -838,7 +804,7 @@ footer::after {
   }
 
   .hero-record {
-    display: none;
+    display: none; /* hide giant record on small screens */
   }
 
   .video-frame {
@@ -858,7 +824,7 @@ footer::after {
   }
 }
 
-/* Reduced motion support */
+/* reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
