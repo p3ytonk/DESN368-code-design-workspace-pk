@@ -5,7 +5,7 @@
   3. Update the links to point to YOUR repository
 -->
 
-# [Peyton Knox] — Web Design Portfolio
+# Peyton Knox — Web Design Portfolio
 
 **DESN368: Code + Design 1 | Fall 2025**  
 Eastern Washington University  
@@ -24,15 +24,15 @@ This repository documents my journey through DESN368, where I learned to build f
 
 ## Design Direction
 
-For my portfolio, I pursued a **[describe your vibe in 2-3 words]** aesthetic.
+For my portfolio, I pursued an **[old art book]** aesthetic.
 
-- **Header Font:** [Font Name]
-- **Body Font:** [Font Name]
-- **Primary Color:** [Hex Code]
-- **Accent Color:** [Hex Code]
-- **Background:** [Hex Code]
+- **Header Font:** [Dawning of a New Day]
+- **Body Font:** [Cormorant Garamond]
+- **Primary Color:** [#510D18]
+- **Accent Color:** [#93B385] [#E4CC6D]
+- **Background:** [#FFFFFF]
 
-**[View Figma File](https://www.figma.com/file/[your-figma-link])**
+**[View Figma File](https://www.figma.com/design/XhizZ8IPivT7yFTITw8IIT/Final-Porfolio?node-id=1-2&t=0mZdvKgCf37K8Aa9-0)**
 
 ---
 
