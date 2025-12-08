@@ -5,7 +5,7 @@
   3. Update the links to point to YOUR repository
 -->
 
-# [Your Name] — Web Design Portfolio
+# [Peyton Knox] — Web Design Portfolio
 
 **DESN368: Code + Design 1 | Fall 2025**  
 Eastern Washington University  
@@ -17,7 +17,7 @@ Instructor: Travis Masingale
 
 This repository documents my journey through DESN368, where I learned to build for the web with HTML and CSS—understanding how the web actually works at the source level.
 
-- **[View Live Portfolio](https://[your-username].github.io/[your-repo-name]/)**
+- **[View Live Portfolio](https://p3ytonk.github.io/DESN368-code-design-workspace-pk/)**
 - **[View Learning Log](https://[your-username].github.io/[your-repo-name]/learning-log.html)** — Weekly progress & exercises
 
 ---
