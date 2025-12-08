@@ -14,28 +14,28 @@
 
 ## Part 2: Visual Design (Figma)
 
-- [ ] Revisited original "Moodz and Vibes" file
-- [ ] Defined typography (Header font + Body font)
-- [ ] Defined 5-color palette (Background, Text, Accent, Secondary, Error/Success)
-- [ ] Created Desktop mockup
-- [ ] Created Mobile mockup
-- [ ] If I pivoted from original direction, I justified the change in my reflection
+- [x] Revisited original "Moodz and Vibes" file
+- [x] Defined typography (Header font + Body font)
+- [x] Defined 5-color palette (Background, Text, Accent, Secondary, Error/Success)
+- [x] Created Desktop mockup
+- [x] Created Mobile mockup
+- [x] If I pivoted from original direction, I justified the change in my reflection
 
 ---
 
 ## Part 3: Portfolio Build — Content
 
-- [ ] Welcome/Hero section with introduction
-- [ ] Bio section (career goals, skills, interests, story)
-- [ ] Image of myself (photo or illustration)
-- [ ] Project Card: The Recipe (thumbnail + title + description + link)
-- [ ] Project Card: Tribute Site (thumbnail + title + description + link)
-- [ ] Project Card: Field Guide (thumbnail + title + description + link)
-- [ ] Project Card: Product Landing Page (thumbnail + title + description + link)
-- [ ] External links (GitHub profile, LinkedIn, socials)
-- [ ] Footer with copyright
-- [ ] Footer with AI/Integrity statement (if applicable)
-- [ ] Link to Learning Log somewhere in navigation or footer
+- [x] Welcome/Hero section with introduction
+- [x] Bio section (career goals, skills, interests, story)
+- [x] Image of myself (photo or illustration)
+- [x] Project Card: The Recipe (thumbnail + title + description + link)
+- [x] Project Card: Tribute Site (thumbnail + title + description + link)
+- [x] Project Card: Field Guide (thumbnail + title + description + link)
+- [x] Project Card: Product Landing Page (thumbnail + title + description + link)
+- [x] External links (GitHub profile, LinkedIn, socials)
+- [x] Footer with copyright
+- [x] Footer with AI/Integrity statement (if applicable)
+- [x] Link to Learning Log somewhere in navigation or footer
 
 ---
 
