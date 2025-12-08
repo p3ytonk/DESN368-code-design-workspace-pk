@@ -1,1 +1,109 @@
-placeholder
+:root {
+  --color-primary: #510D18;    
+  --color-accent: #93B385;     
+  --font-script: "Dawning of a New Day", cursive;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+.reflection-body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: var(--font-serif);
+  color: #333333;
+}
+
+.reflection-header {
+  background-color: var(--color-accent);
+  padding: 1.5rem 0;
+}
+
+.reflection-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.reflection-header h1 {
+  font-family: var(--font-script);
+  font-size: 3.8rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.reflection-main {
+  max-width: 900px;
+  margin: 2.5rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.reflection-section {
+  margin-bottom: 2.4rem;
+}
+
+.reflection-section h2 {
+  font-family: var(--font-script);
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin: 0 0 0.4rem;
+}
+
+.reflection-section p {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.site-footer {
+  background-color: var(--color-primary);
+  color: #fdfbf7;
+}
+
+.reflection-footer {
+  margin-top: 2rem;
+}
+
+.reflection-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.6rem 1.5rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reflection-footer .footer-copy {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fdfbf7;
+}
+
+.reflection-back-link:link,
+.reflection-back-link:visited {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fdfbf7;
+  text-decoration: none;
+}
+
+.reflection-back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .reflection-main {
+    padding: 0 1rem 2.5rem;
+  }
+
+  .reflection-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
