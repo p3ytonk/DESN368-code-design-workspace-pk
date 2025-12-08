@@ -153,9 +153,17 @@ a:active {
   margin-top: -40px; /* nudge towards nav */
 }
 
+/* move name up and slightly right, make larger */
+.hero-text {
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
 .hero-name {
   font-family: var(--font-script);
-  font-size: 4.6rem; /* large script name */
+  font-size: 5.3rem; /* larger script name */
   color: var(--color-primary);
   line-height: 1.05;
   margin: 0;
@@ -191,7 +199,7 @@ main {
   inset: 0;
   margin: auto;
   max-width: 320px;
-  opacity: 0.3;   /* increased from 0.16 */
+  opacity: 0.3;
   z-index: -1;    /* behind the text */
 }
 
@@ -274,9 +282,9 @@ main {
 /* Butterfly overlapping the card – larger */
 .butterfly {
   position: absolute;
-  bottom: -25px;
-  left: -40px;
-  width: 180px;  /* sized up */
+  bottom: -35px;
+  left: -55px;
+  width: 230px;  /* sized up more */
 }
 
 /* ===== CONTACT ===== */
@@ -350,9 +358,9 @@ textarea {
   transform: translateY(0);
 }
 
-/* Beetle overlapping the contact card – larger */
+/* Beetle overlapping the contact card – larger again */
 .beetle {
-  width: 150px;      /* sized up from 120px */
+  width: 200px;      /* sized up more */
   justify-self: end;
 }
 
@@ -419,7 +427,7 @@ textarea {
   text-decoration: underline;
 }
 
-/* Right: social icon buttons with SVG logos */
+/* Right: social icon buttons with PNG logos */
 .footer-icons {
   flex: 1;
   display: flex;
@@ -428,8 +436,8 @@ textarea {
 }
 
 .icon-button {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 1px solid #fdfbf7;
   display: inline-flex;
@@ -441,8 +449,8 @@ textarea {
 }
 
 .icon-button img {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 
 .icon-button:hover {
@@ -499,6 +507,12 @@ textarea {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .hero-text {
+    justify-self: center;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .hero-name {
