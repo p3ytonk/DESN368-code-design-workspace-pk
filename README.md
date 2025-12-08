@@ -77,7 +77,8 @@ Retro vibe Record Store Product Landing Page
 ## Credits & Citations
 
 **Assets**
-- [List any images, icons, or assets you didn't create]
+- Cipe Pineles Portrait
+- The Sims 4 Logo
 
 
 **AI Assistance**
