@@ -1,10 +1,3 @@
-<!-- 
-  HOW TO USE THIS TEMPLATE
-  1. Replace all [bracketed text] with your information
-  2. Delete this comment block before submitting
-  3. Update the links to point to YOUR repository
--->
-
 # Peyton Knox — Web Design Portfolio
 
 **DESN368: Code + Design 1 | Fall 2025**  
