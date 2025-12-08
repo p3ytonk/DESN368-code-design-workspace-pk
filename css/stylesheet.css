@@ -1,7 +1,7 @@
 /* ===== CSS VARIABLES ===== */
 :root {
   /* COLORS */
-  --color-bg: #fdfbf7;        /* soft off-white */
+  --color-bg: #ffffff;        /* pure white */
   --color-primary: #510D18;   /* dark red: headings, footer, lines */
   --color-nav: #ADC4D2;       /* light blue nav bar */
   --color-accent: #93B385;    /* green project card */
@@ -147,6 +147,12 @@ a:active {
   margin: 0;
 }
 
+/* self-portrait flipped + nudged upward */
+.hero-figure img {
+  transform: rotate(180deg);
+  margin-top: -40px; /* nudge towards nav */
+}
+
 .hero-name {
   font-family: var(--font-script);
   font-size: 4.6rem; /* large script name */
@@ -179,14 +185,14 @@ main {
   font-weight: 700; /* bold paragraph */
 }
 
-/* Dragonfly sitting lightly behind the text */
+/* Dragonfly behind the text, higher opacity */
 .dragonfly {
   position: absolute;
   inset: 0;
   margin: auto;
   max-width: 320px;
-  opacity: 0.16;
-  z-index: -1; /* behind the text */
+  opacity: 0.3;   /* increased from 0.16 */
+  z-index: -1;    /* behind the text */
 }
 
 /* ===== SECTION HEADINGS ===== */
@@ -265,12 +271,12 @@ main {
   text-decoration: none;
 }
 
-/* Butterfly overlapping the card */
+/* Butterfly overlapping the card – larger */
 .butterfly {
   position: absolute;
-  bottom: -20px;
-  left: -30px;
-  width: 130px;
+  bottom: -25px;
+  left: -40px;
+  width: 180px;  /* sized up */
 }
 
 /* ===== CONTACT ===== */
@@ -344,9 +350,9 @@ textarea {
   transform: translateY(0);
 }
 
-/* Beetle overlapping the contact card */
+/* Beetle overlapping the contact card – larger */
 .beetle {
-  width: 120px;
+  width: 150px;      /* sized up from 120px */
   justify-self: end;
 }
 
