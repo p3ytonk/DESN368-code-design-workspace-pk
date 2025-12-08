@@ -83,30 +83,29 @@
 
 ## Part 6: Submission
 
-- [ ] Pushed all changes to GitHub
-- [ ] GitHub Pages site is live and working
-- [ ] Submitted Canvas: Link to live portfolio
-- [ ] Submitted Canvas: Link to GitHub repository
-- [ ] Submitted Canvas: Link to Figma file
+- [x] Pushed all changes to GitHub
+- [x] GitHub Pages site is live and working
+- [x] Submitted Canvas: Link to live portfolio
+- [x] Submitted Canvas: Link to GitHub repository
+- [x] Submitted Canvas: Link to Figma file
 
 ---
 
 ## Part 7: Presentation Prep (Dec 10 @ 10:30 AM)
 
-- [ ] I can explain my design choices (typography, color, vibe)
-- [ ] I have one piece of code I'm proud of and can talk about
-- [ ] I can describe my "Threshold" moment
-- [ ] I know how to pull up my site on the big screen
-- [ ] I will be there
+- [x] I can explain my design choices (typography, color, vibe)
+- [x] I have one piece of code I'm proud of and can talk about
+- [x] I can describe my "Threshold" moment
+- [x] I know how to pull up my site on the big screen
+- [x] I will be there
 
 ---
 
 ## Final Gut Check
 
-- [ ] Does my portfolio look like ME?
-- [ ] Would I be comfortable showing this to a potential employer or client?
-- [ ] Did I actually build this, or just copy-paste without understanding?
+- [x] Does my portfolio look like ME?
+- [x] Would I be comfortable showing this to a potential employer or client?
+- [x] Did I actually build this, or just copy-paste without understanding?
 
 ---
 
-**If any box is unchecked, fix it before submitting.**
