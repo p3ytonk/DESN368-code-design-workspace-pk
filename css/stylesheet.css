@@ -1,4 +1,3 @@
-/* ===== CSS VARIABLES ===== */
 :root {
   /* COLORS */
   --color-bg: #ffffff;        /* pure white */
@@ -18,12 +17,10 @@
   --shadow-soft: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Smooth scrolling for in-page links */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===== GLOBAL RESET ===== */
 *,
 *::before,
 *::after {
@@ -45,7 +42,6 @@ img {
   display: block;
 }
 
-/* ===== LINK STATES (GLOBAL) ===== */
 a:link {
   color: var(--color-primary);
   text-decoration: none;
@@ -69,7 +65,7 @@ a:active {
 .top-nav {
   background-color: var(--color-nav);
   padding: 0.75rem 1.5rem;
-  position: sticky;   /* sticky nav */
+  position: sticky;   
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -78,30 +74,27 @@ a:active {
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;  /* use full width */
+  justify-content: space-between;  
   margin: 0 auto;
   padding: 0;
   max-width: 900px;
   width: 100%;
   text-transform: uppercase;
-  font-size: 1rem;              /* bigger nav text */
+  font-size: 1rem;             
   letter-spacing: 0.08em;
   align-items: center;
 }
 
-/* Shared style for label + links */
 .nav-label,
 .nav-link {
   font-family: var(--font-serif);
   font-weight: 700;
 }
 
-/* TABLE OF CONTENTS: static text */
 .nav-label {
   color: #000000;
 }
 
-/* Nav buttons (About / Projects / Contact) */
 .nav-link {
   color: #000000;
   padding: 0.25rem 0.9rem;
@@ -113,14 +106,12 @@ a:active {
     color 0.2s ease;
 }
 
-/* Override global link styles for nav links */
 .nav-link:link,
 .nav-link:visited {
   color: #000000;
   text-decoration: none;
 }
 
-/* Hover: grow + turn white text, no underline */
 .nav-link:hover,
 .nav-link:active {
   background-color: var(--color-primary);
@@ -147,13 +138,11 @@ a:active {
   margin: 0;
 }
 
-/* self-portrait flipped + nudged upward */
 .hero-figure img {
   transform: rotate(180deg);
-  margin-top: -40px; /* nudge towards nav */
+  margin-top: -40px; 
 }
 
-/* move name up and slightly right, make larger */
 .hero-text {
   align-self: flex-start;
   justify-self: flex-start;
@@ -163,47 +152,43 @@ a:active {
 
 .hero-name {
   font-family: var(--font-script);
-  font-size: 5.3rem; /* larger script name */
+  font-size: 5.3rem; 
   color: var(--color-primary);
   line-height: 1.05;
   margin: 0;
 }
 
-/* ===== MAIN WRAPPER ===== */
 main {
   max-width: 900px;
   margin: 0 auto 4rem;
   padding: 0 1.5rem;
 }
 
-/* ===== ABOUT SECTION ===== */
 .about-section {
-  position: relative;   /* for dragonfly */
+  position: relative;  
   font-size: 0.95rem;
   margin-bottom: 3rem;
-  text-align: center;    /* center-aligned */
-  max-width: 760px;      /* slightly narrower column */
+  text-align: center;    
+  max-width: 760px;      
   margin-left: auto;
   margin-right: auto;
-  text-wrap: pretty;     /* try to avoid widows where supported */
+  text-wrap: pretty;     
 }
 
 .about-section p {
   font-family: var(--font-serif);
-  font-weight: 700; /* bold paragraph */
+  font-weight: 700; 
 }
 
-/* Dragonfly behind the text, higher opacity */
 .dragonfly {
   position: absolute;
   inset: 0;
   margin: auto;
   max-width: 320px;
-  opacity: 0.3;
-  z-index: -1;    /* behind the text */
+  opacity: 0.4;
+  z-index: -1;   
 }
 
-/* ===== SECTION HEADINGS ===== */
 .section-heading {
   display: flex;
   align-items: center;
@@ -213,7 +198,7 @@ main {
 
 .section-heading h2 {
   font-family: var(--font-script);
-  font-size: 3.1rem;  /* larger headings */
+  font-size: 3.1rem; 
   color: var(--color-primary);
   margin: 0;
 }
@@ -223,7 +208,6 @@ main {
   border-bottom: 3px dotted var(--color-primary);
 }
 
-/* For headings where dots come BEFORE the text (… Contact Me) */
 .section-heading.section-heading--dots-before {
   justify-content: flex-start;
 }
@@ -262,7 +246,6 @@ main {
   align-items: center;
 }
 
-/* Project titles: turn white on hover */
 .project-link:link,
 .project-link:visited {
   font-family: var(--font-serif);
@@ -279,15 +262,13 @@ main {
   text-decoration: none;
 }
 
-/* Butterfly overlapping the card – larger */
 .butterfly {
   position: absolute;
   bottom: -35px;
   left: -55px;
-  width: 230px;  /* sized up more */
+  width: 230px; 
 }
 
-/* ===== CONTACT ===== */
 .contact-section {
   margin-bottom: 4rem;
 }
@@ -319,7 +300,6 @@ main {
   font-weight: 700;
 }
 
-/* Form fields: semibold italic */
 input,
 textarea {
   border: none;
@@ -331,12 +311,11 @@ textarea {
   background-color: #fffaf0;
 }
 
-/* Submit button: bold, all caps, with blue hover and black text */
 .btn-submit {
   border: none;
   padding: 0.5rem 1.4rem;
   background-color: #ffffff;
-  color: #000000; /* black text */
+  color: #000000; 
   font-family: var(--font-serif);
   font-weight: 700;
   text-transform: uppercase;
@@ -350,7 +329,7 @@ textarea {
 .btn-submit:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
-  background-color: var(--color-nav); /* light blue hover */
+  background-color: var(--color-nav); 
   color: #000000;
 }
 
@@ -358,13 +337,12 @@ textarea {
   transform: translateY(0);
 }
 
-/* Beetle overlapping the contact card – larger again */
+
 .beetle {
-  width: 200px;      /* sized up more */
+  width: 200px;   
   justify-self: end;
 }
 
-/* ===== FOOTER ===== */
 .site-footer {
   background-color: var(--color-primary);
   color: #fdfbf7;
@@ -377,11 +355,10 @@ textarea {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* use full width */
+  justify-content: space-between;
   gap: 2rem;
 }
 
-/* Left stack: copyright + AI note */
 .footer-text {
   display: flex;
   flex-direction: column;
@@ -402,7 +379,6 @@ textarea {
   font-weight: 700;
 }
 
-/* Center: Reflection only */
 .footer-actions {
   flex: 1;
   display: flex;
@@ -410,7 +386,6 @@ textarea {
   align-items: center;
 }
 
-/* Force Reflection link to stay white */
 .footer-reflection-link:link,
 .footer-reflection-link:visited {
   color: #fdfbf7;
@@ -427,7 +402,6 @@ textarea {
   text-decoration: underline;
 }
 
-/* Right: social icon buttons with PNG logos */
 .footer-icons {
   flex: 1;
   display: flex;
@@ -458,12 +432,10 @@ textarea {
   transform: translateY(-1px);
 }
 
-/* tint icons on hover for contrast */
 .icon-button:hover img {
   filter: invert(16%) sepia(41%) saturate(900%) hue-rotate(315deg) brightness(90%) contrast(90%);
 }
 
-/* ===== REFLECTION PAGE STYLES (OK TO KEEP) ===== */
 .reflection-body {
   background-color: var(--color-bg);
 }
@@ -498,7 +470,6 @@ textarea {
   font-weight: 700;
 }
 
-/* ===== RESPONSIVE: MOBILE ===== */
 @media (max-width: 768px) {
   .nav-list {
     font-size: 0.85rem;
